@@ -1,0 +1,936 @@
+* {
+  font-family: "Bebas Neue";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* top nav style */
+.top-bar {
+  background-color: rgb(255, 255, 255);
+  height: 55px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  transition: 0.2s;
+  overflow: hidden;
+}
+.top-bar .text {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.top-bar .text a {
+  color: #3d8b57;
+  font-family: "Roboto", sans-serif;
+}
+.top-bar .close-btn {
+  border-radius: 50px;
+  background-color: #3d8b57;
+  cursor: pointer;
+  padding: 4px 8px 2px 8px;
+  margin-right: 31px;
+}
+
+/* header style */
+header {
+  width: auto;
+  height: auto;
+}
+/* header top style*/
+
+header .top {
+  background: #14422a;
+  height: 65px;
+  padding: 0 11.5%;
+}
+header .top .container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .top .container .menu-btn {
+  background: none;
+  display: none;
+  margin-left: auto;
+  border: none;
+}
+header .top .container .btns {
+  margin-left: auto;
+}
+header .top .container .btns button {
+  color: white;
+  background: #2d8449;
+  cursor: pointer;
+  border: none;
+  font-size: 22px;
+  padding: 8px 43px;
+  clip-path: polygon(10px 0%, 100% 0%, calc(100% - 11px) 100%, 0% 100%);
+}
+
+header .top .container .btns button.active {
+  margin-left: 0px;
+  background: #215e34;
+  padding: 8px 55px;
+}
+.t-btns {
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+.t-btns button {
+  color: white;
+  background: #2d8449;
+  cursor: pointer;
+  border: none;
+  font-size: 22px;
+  padding: 8px 43px;
+  width: 100%;
+}
+.t-btns button.active {
+  margin-left: 3px;
+  background: #215e34;
+  padding: 8px 55px;
+}
+
+/* header navbar style */
+header nav {
+  background: #1c5f3d;
+  height: 67px;
+  padding: 0 11.5%;
+}
+header nav .container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav .nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+header nav .nav-menu a {
+  padding: 17px 36px;
+  text-decoration: none;
+  background: none;
+  color: white;
+  font-size: 25px;
+  white-space: nowrap;
+}
+header nav .nav-menu a:hover {
+  clip-path: polygon(14px 0%, 100% 0%, calc(100% - 11px) 100%, 0% 100%);
+  background: #227f40;
+}
+
+header nav .search-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  background: #153b30;
+}
+header nav .search-box input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 23px;
+  padding: 8px;
+  padding-left: 20px;
+  color: white;
+}
+header nav .search-box button {
+  background: none;
+  border: none;
+  padding: 10px 20px 8px 20px;
+  outline: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* header bottom style */
+
+header .bottom {
+  background: #2a8347;
+  height: 110px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+header .bottom .page-text {
+  padding-left: 11.5%;
+  height: 100%;
+  width: 59%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+header .bottom span {
+  color: white;
+  font-size: 63px;
+}
+header .bottom .ps-sec {
+  width: 40%;
+  background: white;
+  clip-path: polygon(28px 0%, 100% 0%, calc(100% - 0px) 100%, 0% 100%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .bottom .ps-sec .ps-logo {
+  padding-left: 90px;
+  width: auto;
+}
+header .bottom .ps-sec .ps-logo span {
+  font-size: 19px;
+  color: #227f40;
+  position: relative;
+  left: 80px;
+}
+
+/* hero section style */
+.hero-section {
+  background-image: linear-gradient(#07200fb2, #082211a4),
+    url("../images/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 503px;
+  padding: 50px;
+  width: auto;
+}
+.hero-section .hero-slider .slick-dots li {
+  height: 7px;
+  overflow: hidden;
+}
+.hero-section .hero-slider .slick-dots li button {
+  background: rgb(161, 161, 161);
+}
+.hero-section .hero-slider .slick-dots li.slick-active button {
+  background: rgb(255, 255, 255);
+}
+.hero-section .hero-slider .item {
+  height: 100%;
+  width: auto;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.hero-section .hero-slider .item .text {
+  width: 50%;
+  padding: 0 190px;
+  color: white;
+}
+.hero-section .hero-slider .item .text h1 {
+  font-size: 4.5rem;
+  font-weight: 200;
+  line-height: 0.9;
+}
+.hero-section .hero-slider .item .text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+}
+.hero-section .hero-slider .item .watch-box {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.hero-section .hero-slider .item .watch-box .play-btn {
+  position: absolute;
+  border-radius: 50px;
+  border: none;
+  padding: 22px 25px 22px 29px;
+  background: #032e12a2;
+  z-index: 5;
+  cursor: pointer;
+}
+.hero-section .arrows {
+  display: flex;
+  align-items: center;
+  width: auto;
+  position: relative;
+  top: 47%;
+}
+.hero-section .arrows .rightarrow {
+  margin-left: auto;
+  z-index: 3;
+  cursor: pointer;
+}
+.hero-section .arrows .leftarrow {
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* content section style*/
+.content {
+  background: #073626;
+  padding: 60px 0;
+  height: 100%;
+}
+.content .container {
+  width: auto;
+  height: 100%;
+  margin: 0px 11.5%;
+}
+.content .row {
+  display: flex;
+  flex-direction: row;
+}
+.content .main {
+  width: 73%;
+}
+.content .sidebar {
+  width: 25%;
+  padding: 20px;
+}
+.content .main .slider {
+  width: auto;
+  padding: 0 25px;
+}
+.content .slider .footbal-slider .slick-dots {
+  position: relative;
+  top: 32px;
+}
+.content .slider .footbal-slider .slick-dots li {
+  height: 4px;
+  overflow: hidden;
+}
+.content .slider .footbal-slider .slick-dots li button {
+  background: rgb(161, 161, 161);
+}
+.content .slider .footbal-slider .slick-dots li.slick-active button {
+  background: rgb(255, 255, 255);
+}
+.content .slider .arrows {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+.content .slider .arrows .rightarrowf {
+  margin-left: auto;
+  z-index: 3;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+}
+.content .slider .arrows .leftarrowf {
+  z-index: 3;
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+}
+.content .main .slider .footbal-slider .item {
+  width: auto;
+  padding: 0 20px;
+}
+.content .main .slider .footbal-slider .item .box {
+  border: 8px solid rgba(230, 255, 230, 0.151);
+  height: auto;
+}
+
+.reebok-section {
+  margin-top: 45px;
+  background: #2b8b4b;
+  display: flex;
+  height: 260px;
+  flex-direction: row;
+}
+.reebok-section .image {
+  height: 100%;
+  width: 60%;
+  clip-path: polygon(0px 0%, 100% 0%, calc(100% - 60px) 100%, 0% 100%);
+}
+
+.reebok-section .rs-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  justify-content: center;
+  color: white;
+}
+.reebok-section .rs-content .title {
+  font-size: 25px;
+  line-height: 1.1;
+}
+.reebok-section .rs-content .desc {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  color: rgb(223, 223, 223);
+}
+.reebok-section1 {
+  background: #145032;
+  display: flex;
+  height: 260px;
+  flex-direction: row;
+}
+.reebok-section1 .image {
+  height: 100%;
+  width: 60%;
+  clip-path: polygon(0px 0%, 100% 0%, calc(100% - 0px) 100%, 10% 100%);
+}
+
+.reebok-section1 .rs-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  justify-content: center;
+  color: white;
+}
+.reebok-section1 .rs-content .title {
+  font-size: 25px;
+  line-height: 1.1;
+}
+.reebok-section1 .rs-content .desc {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  color: rgb(223, 223, 223);
+}
+
+/* contact form */
+.contact-section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #0b633a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-section h1 {
+  color: white;
+  font-size: 40px;
+  line-height: 0.4;
+  font-weight: 200;
+}
+.contact-section .form-inline {
+  display: flex;
+  flex-direction: row;
+}
+.contact-section .form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.contact-section .form-group label {
+  font-size: 21px;
+}
+.contact-section .form-group select {
+  font-size: 15px;
+  padding: 9px;
+  color: gray;
+  width: 280px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  background: white;
+}
+.contact-section .form-group input {
+  font-size: 15px;
+  padding: 10px;
+  color: gray;
+  width: 260px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  background: white;
+}
+.contact-section .form-group textarea {
+  font-size: 15px;
+  padding: 10px;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  background: white;
+}
+.contact-section .submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.contact-section .submit-btn button {
+  color: white;
+  background: rgb(0, 59, 35);
+  padding: 8px 70px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+.gender-inputs {
+  display: flex;
+  flex-direction: row;
+}
+.radio {
+  margin: 0.5rem;
+}
+.radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type="radio"] + .radio-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio input[type="radio"]:checked + .radio-label:before {
+  background-color: rgb(1, 114, 69);
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio input[type="radio"]:focus + .radio-label:before {
+  outline: none;
+  border-color: rgb(0, 59, 35);
+}
+.radio input[type="radio"] + .radio-label:empty:before {
+  margin-right: 0;
+}
+.contact-section .ml-4 {
+  margin-left: 20px;
+}
+.contact-section .mt-4 {
+  margin-top: 20px;
+}
+
+/* footer style */
+footer {
+  background: rgb(7, 44, 35);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .footer-nav li {
+  list-style: none;
+  align-items: center;
+  display: flex;
+}
+footer .footer-nav li a {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 20px;
+  padding: 20px 20px;
+}
+footer .footer-nav li .fdivider {
+  height: 23%;
+  transform: rotate(15deg);
+  width: 2px;
+  background: white;
+}
+
+footer .social-icons {
+  position: relative;
+  top: -35px;
+  display: flex;
+  flex-direction: row;
+}
+footer .social-icons li {
+  list-style: none;
+  align-items: center;
+  padding: 0 12px;
+  display: flex;
+}
+footer .copyright {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: -35px;
+  left: 18px;
+}
+/* divider */
+.divider {
+  width: auto;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.479);
+  margin-top: 67px;
+}
+/* posts style */
+.content .main .posts {
+  margin-top: 40px;
+}
+.content .main .posts .row {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.content .main .posts .row .col {
+  padding-top: 10px;
+  height: auto;
+}
+@media (min-width: 30rem) {
+  .content .main .posts .row .col {
+    width: 50%;
+  }
+  .content .main .posts .post-card {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 46rem) {
+  .content .main .posts .row .col {
+    width: 33.33333%;
+  }
+}
+.content .main .posts .post-card {
+  height: 100%;
+  margin: 8px;
+  background: #2a8347;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+.content .main .posts .post-card .texts {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 17px;
+}
+.content .main .posts .post-card .texts .title {
+  font-size: 26px;
+  color: white;
+}
+.content .main .posts .post-card .texts .description {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  overflow: hidden;
+  color: rgb(211, 211, 211);
+  font-family: "Roboto", sans-serif;
+}
+.content .main .posts .post-card button {
+  margin-top: auto;
+  border: none;
+  background: #124e26;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px 0;
+  color: white;
+  width: 100%;
+}
+
+.content .sidebar .events {
+  background: #2a8347;
+  color: white;
+  margin-top: 10px;
+}
+.content .sidebar .events .header {
+  background: #05572e;
+  padding: 10px 19px;
+  font-size: 25px;
+}
+.content .sidebar .events .body {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.content .sidebar .events .body .event-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.content .sidebar .events .body .event-box .texts {
+  position: relative;
+  top: -3px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.content .sidebar .events .body .event-box .texts .title {
+  font-size: 23px;
+}
+.content .sidebar .events .body .event-box .texts .title::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.459);
+  position: relative;
+  top: -4px;
+}
+.content .sidebar .events .body .event-box .texts .country {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+.content .sidebar .events .body .event-box .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background: white;
+  color: #05572e;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/* make design responsive */
+
+@media only screen and (max-width: 1338px) {
+  header .top {
+    padding: 0 5%;
+  }
+  header nav {
+    padding: 0 5%;
+  }
+  header nav .nav-menu a {
+    padding: 17px 26px;
+  }
+  header .bottom .page-text {
+    padding-left: 5%;
+  }
+  .hero-section .hero-slider .item .text {
+    padding: 0 100px;
+  }
+  .content .container {
+    margin: 0px 3.5%;
+  }
+  .content .slider .arrows {
+    top: 130px;
+  }
+}
+@media only screen and (max-width: 1086px) {
+  .hero-section .hero-slider .item .text {
+    padding: 0;
+  }
+  .hero-section .hero-slider .item .text h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .hero-section .hero-slider .item .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .hero-section .arrows {
+    display: none;
+  }
+  .hero-section {
+    padding: 0 50px;
+  }
+  .hero-section .hero-slider .item .watch-box .img-thumbnail {
+    height: 50px;
+  }
+  .content .slider .arrows {
+    top: 110px;
+  }
+  .content .container {
+    margin: 0px 1.5%;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .top-bar {
+    height: 50px;
+  }
+  header .top {
+    padding: 0 2%;
+    height: 60px;
+  }
+  header nav {
+    padding: 0 2%;
+    height: 61px;
+  }
+  header .bottom {
+    height: 80px;
+  }
+  header .bottom span {
+    font-size: 43px;
+  }
+  header nav .nav-menu a {
+    padding: 17px 20px;
+    font-size: 20px;
+  }
+  header .bottom .page-text {
+    padding-left: 2%;
+  }
+  header nav .search-box input {
+    padding: 2px;
+    padding-left: 10px;
+  }
+  header nav .search-box button {
+    padding: 5px 13px 5px 13px;
+  }
+  .content .slider .arrows {
+    top: 100px;
+  }
+}
+@media only screen and (max-width: 915px) {
+  .content .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .main {
+    width: auto;
+  }
+  .content .sidebar {
+    width: auto;
+  }
+  .content .slider .arrows {
+    display: none;
+  }
+}
+@media only screen and (max-width: 818px) {
+  header nav {
+    z-index: 2;
+    width: auto;
+    padding: 0px;
+    overflow: hidden;
+    height: 0;
+    position: absolute;
+    width: 100%;
+  }
+  header nav .search-box {
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 98%;
+  }
+  header nav .search-box input {
+    width: auto;
+  }
+  header nav .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+  header nav .nav-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav .nav-menu a:hover {
+    clip-path: polygon(0px 0%, 100% 0%, calc(100% - 11px) 100%, 0% 100%);
+  }
+  header .top .container .menu-btn {
+    display: block;
+  }
+  header .top .container .menu-btn.close {
+    display: none;
+  }
+  header .bottom .page-text {
+    width: 100%;
+  }
+  header .bottom .ps-sec {
+    width: auto;
+  }
+  header .top .container .btns {
+    display: none;
+  }
+  .top-bar {
+    justify-content: space-around;
+    height: auto;
+  }
+  .top-bar .text {
+    padding: 10px;
+  }
+  .t-btns {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 706px) {
+  .hero-section {
+    height: auto;
+    padding: 50px 0;
+  }
+  .hero-section .hero-slider .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .hero-section .hero-slider .item .text {
+    width: 90%;
+    color: white;
+  }
+}
+@media only screen and (max-width: 594px) {
+  .contact-section .form-inline {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .contact-section .form-group select {
+    width: auto;
+  }
+  .contact-section .form-group input {
+    width: auto;
+  }
+  .contact-section .ml-4 {
+    margin-left: 0px;
+  }
+  .contact-section .mt-5 {
+    margin-top: 20px;
+  }
+  .reebok-section {
+    flex-direction: column;
+    height: auto;
+  }
+  .reebok-section .rs-content{
+    width: auto;
+    padding: 10px;
+  }
+  .reebok-section .image{
+    width: auto;
+    clip-path: none;
+  }
+  .reebok-section1 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .reebok-section1 .rs-content{
+    width: auto;
+    padding: 10px;
+  }
+  .reebok-section1 .image{
+    width: auto;
+    clip-path: none;
+  }
+  .content .sidebar{
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 493px) {
+  header .bottom {
+    display: none;
+  }
+}
